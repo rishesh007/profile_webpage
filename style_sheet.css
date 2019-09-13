@@ -1,0 +1,53 @@
+
+.container{
+    text-align: center;
+}
+
+.head{
+    background-color: goldenrod;
+    position : absolute;
+	top : 50%;
+	left : 50%;
+	transform : translateX(-50%) translateY(-50%);
+}
+
+h1{
+    font-size: 40px;
+    letter-spacing: 3px;
+    word-spacing: .5em;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    margin-top:15px;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+   a:hover {
+    color: #f1f1f1;
+  }
+
+   a:active {
+    color:red;
+  }
+
+
+
+
+
