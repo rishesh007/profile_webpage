@@ -1,51 +1,134 @@
-
-.container{
-    text-align: center;
+.container {
+  text-align: center;
 }
 
-.head{
-    background-color: goldenrod;
-    position : absolute;
-	top : 50%;
-	left : 50%;
-	transform : translateX(-50%) translateY(-50%);
+.head {
+  background-color: goldenrod;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
-h1{
-    font-size: 40px;
-    letter-spacing: 3px;
-    word-spacing: .5em;
+h1 {
+  font-size: 40px;
+  letter-spacing: 3px;
+  word-spacing: .5em;
+  
 }
 
 
 .sidenav {
-    height: 100%;
-    width: 160px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 20px;
-  }
-  
-  .sidenav a {
-    margin-top:15px;
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-  }
-  
-   a:hover {
-    color: #f1f1f1;
-  }
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
 
-   a:active {
-    color:red;
-  }
+.sidenav a {
+  margin-top: 15px;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+a:hover {
+  color: #f1f1f1;
+}
+
+a:active {
+  color: red;
+}
+
+.projects, .gallery{
+  width:88%;
+  border:solid 1px black;
+  text-align: center;
+  float: right;
+}
+.contact{
+  width:88%;
+  border:solid 1px black;
+  float: right;
+}
+
+.contact h1{
+  margin-left: 480px;
+}
+
+.outing{
+  border:solid 1px black;
+  overflow: hidden;
+  width:80%;
+  margin:auto;
+  margin-top: 20px;
+  
+}
+
+.gallery img{
+  width:40%;
+  height:60%;
+  margin: 15px;
+  transform: rotate(90deg) ;
+}
+
+form{
+  border:solid 1px black;
+  width:30%;
+  height:30%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+input[type=text],input[type=email]{
+ 
+  width:100%;
+  box-sizing: border-box;
+  text-align: left;
+  margin:15px 10px 15px 0px;
+}
+
+label{
+  
+  padding: 12px 12px 12px 0;
+  margin:10px 10px 10px 0;
+}
+
+.box{
+  border:solid 1px black;
+  margin :auto;
+  
+}
+
+.flexbox{
+  border:solid 1px black;
+  float: left;
+  margin-left: 45px;
+  width: 20%;
+}
+
+.flexbox img{
+  border:solid 1px black;
+  width:90px;
+  height:90px;
+  margin:10px 70px 10px 70px;
+}
+
+
+
+
+
+
+
 
 
 
