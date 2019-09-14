@@ -11,7 +11,7 @@
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 50px;
   letter-spacing: 3px;
   word-spacing: .5em;
   
@@ -53,14 +53,16 @@ a:active {
   text-align: center;
   float: right;
 }
-.contact{
+.contact,.about{
   width:88%;
+  height:100%;
   border:solid 1px black;
   float: right;
+  background-color:ghostwhite ;
 }
 
 .contact h1{
-  margin-left: 480px;
+  margin-left: 460px;
 }
 
 .outing{
@@ -82,11 +84,13 @@ a:active {
 form{
   border:solid 1px black;
   width:30%;
-  height:30%;
+  height:40%;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
+  background-color: #f4f4f4;
+  
 }
 
 input[type=text],input[type=email]{
@@ -103,17 +107,27 @@ label{
   margin:10px 10px 10px 0;
 }
 
+#query{
+  width:360px;
+  height: 75px;
+  text-align: top;
+  margin-top: 15px;
+  resize: none;
+}
+
 .box{
   border:solid 1px black;
   margin :auto;
-  
+  margin-top: 40px;
 }
 
 .flexbox{
   border:solid 1px black;
   float: left;
   margin-left: 45px;
+  margin-top: 30px;
   width: 20%;
+  background-color:#f4f4f4;
 }
 
 .flexbox img{
