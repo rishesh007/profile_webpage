@@ -11,11 +11,23 @@ body{
   background-image: url("./images/desktop.jpg");
   background-size:cover;
 }
+
+
+.container img{
+  /* border:solid 1px black; */
+  width:400px;
+  height:400px;
+  transform: translateX(0%) translateY(-200%);
+
+  /* margin:10px 70px 10px 70px; */
+}
+
 path{
   stroke: #fff;
   fill: #fff;
   stroke-dasharray: 630;
   opacity: 10;
+  transform: translateX(0%) translateY(26%);
   animation: animate 3s cubic-bezier(0,0.23,1,.1);
 }
 
