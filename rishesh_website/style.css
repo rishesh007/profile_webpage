@@ -1,0 +1,385 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif,"Roboto";
+}
+/* 
+body{
+  background-color: yellow;
+} */
+/* -------> Start Navigation Bar Section <------- */
+.nav-section {
+  background-image: linear-gradient(-90deg, #000,#34495e);
+  box-sizing: border-box;
+  display: flex;
+  /* border: green 2px solid; */
+  justify-content: flex-end;
+  align-content: center;
+  padding: 20px 10%;
+  height: 7vh;
+  width: 100%;
+}
+
+.nav-section p, li, a, button{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500px;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.nav-section p{
+  text-decoration: none;
+  margin-right: auto;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a{
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover{
+  color: #0088a9;
+}
+
+.home-contact{
+  margin: 0px 0px 0px 20px;
+  padding: 9px 25px 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transform: translateY(-25%);
+  transition: all 0.3s ease 0s;
+}
+
+.home-contact:hover{
+  background-color: rgba(0, 136, 169, 0.8);
+}
+/* -------> End Navigation Bar Section <------- */
+
+
+
+
+/* -------> Start Home Page Section <------- */
+.home-section{
+  background-image: linear-gradient(-90deg, #000,#34495e);
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+
+/* -------> Start Name section <--------*/
+.name{
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+  height: 1200px;
+}
+
+path{
+  stroke: #fff;
+  fill: #fff;
+  stroke-dasharray: 630;
+  opacity: 10;
+  transform: translateX(3%) translateY(10%);
+  animation: animate 1.5s cubic-bezier(0,0.23,1,.1);
+  
+}
+
+@keyframes animate{
+  0%{
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 630;
+  }
+
+  30%{
+    opacity: 10;
+    fill: none;
+    stroke-dashoffset: 630;
+  }
+
+  90%{
+    fill: rgba(255,255,255,0);
+  }
+
+  100%{
+    opacity: 10;
+    fill: rgba(255,255,255,1);
+    stroke-dashoffset: 0;
+  }
+}
+
+.name h1 {
+  color: #edf0f1;
+  position: relative;
+  margin: 0 auto;
+  font-family: 'Roboto';font-size: 30px;
+  justify-content: center;
+  transform: translate(0%,-440%);
+  text-align: center;
+  font-style: normal;
+  font-weight: 10;
+  animation: type 3s steps(45);
+  animation-delay: 1.4s;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 47ch;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes type {
+  0%{
+    opacity: 1;
+    width: 0ch;
+  }
+  
+  100%{
+    opacity: 1;
+    width: 45ch;
+  }
+}
+/* -------> End Name Section <------- */
+
+/* -------> End Home Section <------- */
+
+
+/* -------> Start About Section <------- */
+
+.about-section{
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px;
+  border: none;
+  width: 100%;
+  height: auto;
+}
+
+.photo{
+  border: none;
+  padding: 10px 10px;
+  height: 250px;
+  width: 250px;
+  margin: 20px 20px;
+}
+
+.photo img{
+  width: 200px;
+  height: 200px;
+  border: solid #34495e 3px;;
+  margin: 20px 20px;
+  border-radius: 100%
+}
+
+.about-content{
+  border: none;
+  padding: 10px 10px;
+  height: 250px;
+  max-width: 640px;
+  margin: 20px 20px;
+}
+
+.about-content p{
+  margin: 30px 10px;
+  padding: 30px 10px;
+  border: none;
+  text-align: justify;
+  color: #34495e;
+}
+
+/* -------> Start skills and experience section <-------- */
+
+.about-skills{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: auto;
+  /* border: rgb(155, 36, 36) solid 2px; */
+  background-image: linear-gradient(-90deg, #000,#34495e);
+  display: flex;
+  justify-content: center;
+}
+
+
+.skills, .experience{
+  /* width: 50hh%; */
+  align-content: initial;
+  /* border: purple solid 2px; */
+  color: #edf0f1;
+  /* border: green 2px solid; */
+}
+
+.skills{
+  padding: 60px 300px;
+}
+
+.experience{
+  padding: 60px 150px;
+}
+.skills h2, .experience h2{
+  color: #fff;
+  text-decoration: none;
+  font-size: 45px;
+  /* border: purple solid 2px; */
+} 
+
+
+.experience-list, .skills-list{
+  /* border: yellow solid 2px; */
+  padding: 10px;
+}
+
+.experience-list{
+  transform: translate(10%,0%)
+}
+
+.skills-list {
+  transform: translate(30%,0%)
+}
+.experience-list li, .skills-list li{
+  font-size: 20px;
+  color: #edf0f1;
+  padding: 2px;
+}
+/* -------> End skills and experience section <-------- */
+
+
+/* -------> End About Section <------- */
+
+/* -------> Start Contact Section <------- */
+.contact-section{
+  width: 100%;
+  height: 90.7vh;
+  background: url(images/contact.webp) no-repeat;
+  background-size: 100% 100%;
+  padding: 40px 0;
+}
+.contact-section h1{
+  padding: 6vh 0 0 0 ;  
+  font-size: 60px;
+  text-align: center;
+  color: #34495e;
+}
+
+.border{
+  width: 100px;
+  height: 10px;
+  background: #34495e;
+  margin: 40px auto;
+}
+
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #fff;
+  padding: 20px 40px;
+  outline: none;
+  color: #34495e;
+  transition: 0.5s;
+}
+
+.contact-form-text:focus{
+  box-shadow: 0 0 10px 4px #34495e;
+}
+
+textarea.contact-form-text{
+  resize: none;
+  height: 120px;
+}
+
+.contact-form-btn{
+  float: right;
+  border: 0;
+  margin: 10px 0px;
+  background: #34495e;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.contact-form-btn:hover{
+  background: #2980b9;
+}
+
+.contact-section ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  margin: 0;
+  transform: translate(-50%,550%);
+  display: flex;
+}
+
+.contact-section ul li{
+  list-style: none;
+  margin: 0 15px;
+}
+
+.contact-section ul li .fa{
+  font-size: 30px;
+  line-height: 60px;
+  transition: .6s;
+  color: #34495e;
+}
+
+.contact-section ul li .fa:hover{
+  background-color: #fff;
+}
+
+.contact-section ul li a{
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  transition: .6s;
+  box-shadow: 0 5px 4px #34495e;
+}
+
+.contact-section ul li a:hover{
+  transform: translate(0, -10px);
+}
+
+/* -------> End Contact Section <------- */
+
+/* -------> Start Bottom section <------- */
+
+.Bottom{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100px;
+  border: rgb(155, 36, 36) solid 2px;
+  background-color: #000;
+  display: flex;
+}
+
+
+/* ---------> Bottom section <-------- */
