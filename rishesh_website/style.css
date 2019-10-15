@@ -28,6 +28,9 @@ body{
   text-decoration: none;
 }
 
+.nav-section a{
+  color: #fff;
+}
 .nav-section p{
   text-decoration: none;
   margin-right: auto;
